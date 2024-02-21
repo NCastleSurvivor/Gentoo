@@ -8,6 +8,8 @@ sudo cp -rf -u /usr/share/wallpapers/tupian/*  tupian/
 sudo cp -rf -u /usr/share/sddm/* sddm/
 sudo cp -rf -u ../../.config/neofetch/* neofetch/
 sudo cp -rf -u ../../.docker/* docker/
+cp -rf -u ../../restat.sh restat.sh
+cp -rf -u ../../docker.sh docker.sh
 
 sudo rm -rf docker/redis/data/* && rm -rf docker/mysql/data/* && rm -rf docker/nginx/html/*
 
