@@ -11,7 +11,7 @@ sudo cp -rf -u ../../.docker/* docker/
 cp -rf -u ../../restat.sh restat.sh
 cp -rf -u ../../docker.sh docker.sh
 
-sudo rm -rf docker/redis/data/* && rm -rf docker/mysql/data/* && rm -rf docker/nginx/html/*
+sudo rm -rf docker/redis/data/* && sudo rm -rf docker/mysql/data/* && sudo rm -rf docker/nginx/html/*
 
 # 如果当前工作区没有更改则无需继续进行
 git status
@@ -27,7 +27,7 @@ case $input in
         git status
 
         # 输入提交说明
-        read -p "请输入本次提交的备注说明:" commit
+        read -r -p "请输入本次提交的备注说明:" commit
         echo "<<<<<<<< 将暂存区内容提交到本地仓库:开始 >>>>>>>>"
         git commit -m ${commit} --no-verify
 
