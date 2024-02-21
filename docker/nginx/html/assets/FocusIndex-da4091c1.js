@@ -1,0 +1,1 @@
+import{_ as o}from"./index-429ff8e5.js";import{C as _,N as c,U as t,M as s}from"./element-plus-dc5e6ec0.js";const n={},r={class:"index"};function a(d,i){const e=t("router-view");return s(),_("div",r,[c(e)])}const u=o(n,[["render",a],["__scopeId","data-v-90f2bcd5"]]);export{u as default};
