@@ -14,6 +14,7 @@ cp -rf -u ../../docker.sh docker.sh
 sudo rm -rf docker/redis/data/* && sudo rm -rf docker/mysql/data/* && sudo rm -rf docker/nginx/html/*
 
 # 如果当前工作区没有更改则无需继续进行
+git add .
 git status
 
 # 确定是否要提交
