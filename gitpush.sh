@@ -3,10 +3,13 @@
 # git 自动化部署脚本
 # 同步本地目录到文件git仓库
 
+
 sudo cp -rf -u /etc/portage/* portage/
-sudo cp -rf -u /usr/share/wallpapers/tupian/*  tupian/
+#sudo cp -rf -u /usr/share/wallpapers/tupian/*  tupian/
+sudo cp -rf -u /usr/share/wallpapers/images/*  tupian/
 sudo cp -rf -u /usr/share/sddm/* sddm/
 sudo cp -rf -u ../../.config/neofetch/* neofetch/
+sudo cp -rf -u ../../.local/share/fcitx5/themes/* fcitx-themes/
 sudo cp -rf -u ../../.docker/* docker/
 cp -rf -u ../../restat.sh restat.sh
 cp -rf -u ../../docker.sh docker.sh
