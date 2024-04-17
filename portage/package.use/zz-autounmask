@@ -1,26 +1,39 @@
-# package.use# required by media-libs/mesa-23.3.3::gentoo[video_cards_radeonsi,-video_cards_r600,-video_cards_radeon,-video_cards_r300]
-# required by x11-libs/gtk+-3.24.39::gentoo[wayland]
-# required by dev-qt/qtwidgets-5.15.12::gentoo[gtk]
-# required by dev-qt/qtsvg-5.15.12::gentoo
-# required by kde-frameworks/kiconthemes-5.114.0::gentoo
-# required by kde-plasma/polkit-kde-agent-5.27.10::gentoo
-# required by kde-frameworks/kauth-5.114.0::gentoo
-# required by kde-frameworks/kconfigwidgets-5.114.0::gentoo
->=x11-libs/libdrm-2.4.120 video_cards_radeon
-# required by kde-plasma/xdg-desktop-portal-kde-5.27.10::gentoo
-# required by kde-plasma/plasma-meta-5.27.10::gentoo[desktop-portal]
+# package.use# required by kde-plasma/plasma-meta-5.27.11::gentoo
 # required by plasma-meta (argument)
->=dev-qt/qtprintsupport-5.15.12 cups
-# required by www-client/firefox-121.0.1::gentoo[system-libvpx]
-# required by firefox (argument)
->=media-libs/libvpx-1.13.1-r1 postproc
+>=kde-plasma/kwin-5.27.11 lock
+# required by kde-plasma/libplasma-5.115.0::gentoo
+# required by kde-plasma/plasma-nm-5.27.11::gentoo
+# required by kde-plasma/plasma-meta-5.27.11::gentoo[networkmanager]
+# required by plasma-meta (argument)
+>=kde-frameworks/kconfig-5.115.0 qml
+# required by kde-plasma/plasma-systemmonitor-5.27.11::gentoo
+# required by kde-plasma/plasma-meta-5.27.11::gentoo
+# required by plasma-meta (argument)
+>=kde-frameworks/kitemmodels-5.115.0 qml
+# required by kde-plasma/xdg-desktop-portal-kde-5.27.11::gentoo
+# required by kde-plasma/plasma-meta-5.27.11::gentoo[desktop-portal]
+# required by plasma-meta (argument)
+>=dev-qt/qtprintsupport-5.15.13 cups
+# required by kde-plasma/plasma-workspace-5.27.11::gentoo
+# required by kde-plasma/plasma-desktop-5.27.11::gentoo
+# required by kde-plasma/plasma-meta-5.27.11::gentoo
+# required by plasma-meta (argument)
+>=kde-frameworks/prison-5.115.0 qml
+# required by kde-frameworks/qqc2-desktop-style-5.115.0::gentoo
+# required by kde-plasma/plasma-desktop-5.27.11::gentoo
+# required by kde-plasma/plasma-meta-5.27.11::gentoo
+# required by plasma-meta (argument)
+>=kde-frameworks/sonnet-5.115.0 qml
+# required by www-client/firefox-124.0.2::gentoo[system-libvpx]
+# required by www-client/firefox (argument)
+>=media-libs/libvpx-1.14.0 postproc
+# required by kde-apps/spectacle-23.08.5::gentoo
+# required by kde-apps/spectacle (argument)
+>=dev-qt/qtmultimedia-5.15.13:5 qml
 # required by sys-boot/os-prober-1.81-r1::gentoo
 # required by os-prober (argument)
->=sys-boot/grub-2.12-r1 mount
-# required by x11-libs/xapp-2.6.1::gentoo
-# required by app-backup/timeshift-23.07.1::guru
-# required by app-backup/timeshift (argument)
->=dev-libs/libdbusmenu-16.04.0-r2 gtk3
-# required by app-office/onlyoffice-bin-7.5.1::gentoo
-# required by app-office/onlyoffice-bin (argument)
->=dev-qt/qtgui-5.15.12 eglfs
+>=sys-boot/grub-2.12-r3 mount
+# required by sys-kernel/installkernel-34-r1::gentoo[dracut,-uki,systemd-boot]
+# required by @selected
+# required by @world (argument)
+>=sys-apps/systemd-255.4 boot

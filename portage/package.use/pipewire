@@ -1,2 +1,2 @@
 media-sound/pulseaudio -daemon
-media-video/pipewire bluetooth pipewire-alsa sound-server systemd 
+media-video/pipewire bluetooth pipewire-alsa sound-server systemd -jack-client jack-sdk 
