@@ -6,15 +6,15 @@
 
 sudo cp -rf -u /etc/portage/* portage/
 #sudo cp -rf -u /usr/share/wallpapers/tupian/*  tupian/
-sudo cp -rf -u /usr/share/wallpapers/images/*  tupian/
-sudo cp -rf -u /usr/share/sddm/* sddm/
+#sudo cp -rf -u /usr/share/wallpapers/images/*  tupian/
+#sudo cp -rf -u /usr/share/sddm/* sddm/
 sudo cp -rf -u ../../.config/neofetch/* neofetch/
 sudo cp -rf -u ../../.local/share/fcitx5/themes/* fcitx-themes/
-sudo cp -rf -u ../../.docker/* docker/
-cp -rf -u ../../restat.sh restat.sh
-cp -rf -u ../../docker.sh docker.sh
+#sudo cp -rf -u ../../.docker/* docker/
+#cp -rf -u ../../restat.sh restat.sh
+#cp -rf -u ../../docker.sh docker.sh
 cp -rf -u ../../.config/alacritty/alacritty.toml alacritty/
-sudo rm -rf docker/redis/data/* && sudo rm -rf docker/mysql/data/* && sudo rm -rf docker/nginx/html/*
+#sudo rm -rf docker/redis/data/* && sudo rm -rf docker/mysql/data/* && sudo rm -rf docker/nginx/html/*
 
 # 如果当前工作区没有更改则无需继续进行
 git add .
