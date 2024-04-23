@@ -1,0 +1,100 @@
+{
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "all-outputs": true,
+    "active-only": false,
+    "format": "{icon}",
+    "format-icons": {
+//      "1": "",
+//      "2": "",
+//      "3": "",
+//      "4": "",
+//      "5": "",
+//      "6": "",
+//      "7": "",
+//      "8": "",
+	  "urgent": "",
+	  "active": "",
+      "default": "󰧞"
+    },
+    "sort-by": "number",
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    }
+  },
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 25
+  },
+  "backlight": {
+    "device": "amdgpu_bl1",
+    "format": "{icon} {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "scroll-step": 5
+  },
+  "battery": {
+    "bat": "BAT0",
+    "adapter": "AC0",
+    "full-at": 99,
+    "format-time": "{H}:{M}",
+    "format": "{icon} {capacity}%",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["", "", "", "", ""]
+    },
+    "format-full": "Charged ",
+    "interval": 5,
+    "tooltip": false
+  },
+  "cpu": {
+    "format": "{icon} {usage}%",
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "interval": 10
+  },
+  "clock": {
+    "interval": 60,
+    "format": " {:%H:%M}",
+    "tooltip-format": "{:%Y-%m-%d %H:%M}"
+  },
+  "mpd": {
+    "max-length": 25,
+    "format": " {title} - {artist}",
+    "format-stopped": " Stopped",
+    "format-paused": " Paused",
+    "on-click": "mpc toggle",
+    "on-scroll-up": "mpc prev",
+    "on-scroll-down": "mpc next",
+    "on-click-right": "~/.config/hypr/scripts/menu_music &"
+  },
+  "network": {
+    "interval": 5,
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-wifi": "{icon} {signalStrength}%",
+    "format-ethernet": "",
+    "format-disconnected": "󰖪 None",
+    "tooltip-format": "{essid} : {bandwidthUpBytes} | {bandwidthDownBytes}",
+    "on-click": "~/.config/hypr/scripts/menu_wifi &"
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "format": "{icon} {volume}%",
+    "tooltip-format": "Volume : {volume}%",
+    "format-icons": {
+      "headphone": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["󰖀", "󰕾", ""]
+    },
+    "format-muted": "󰝟"
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 5
+  }
+}
